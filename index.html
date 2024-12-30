@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonne Année 2025</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://example.com/new-year-background.jpg') no-repeat center center fixed; /* Image de fond pour le Nouvel An */
+            background-size: cover;
+            color: rgb(31, 22, 70);
+            margin: 0;
+            overflow: hidden;
+            background-color: #ff9999;
+        }
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            animation: zoom-in-out 2s infinite;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoom-in-out {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: yellow;
+            top: -10px;
+            animation: confetti 5s infinite;
+        }
+        @keyframes confetti {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100vh); }
+        }
+        .confetti:nth-child(odd) {
+            background: red;
+        }
+        .confetti:nth-child(even) {
+            background: green;
+        }
+        .confetti:nth-child(3n) {
+            background: blue;
+        }
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 50px;
+            height: 70px;
+            background: radial-gradient(circle, #ff9999 0%, #ff6666 60%);
+            border-radius: 50%;
+            animation: float 4s ease-in-out infinite;
+        }
+        .balloon:nth-child(odd) {
+            background: radial-gradient(circle, #66ccff 0%, #3399ff 60%);
+        }
+        .balloon:nth-child(even) {
+            animation-duration: 5s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-200px); }
+            100% { transform: translateY(0); }
+        }
+        .balloon:nth-child(1) { left: 5%; }
+        .balloon:nth-child(2) { left: 15%; }
+        .balloon:nth-child(3) { left: 25%; }
+        .balloon:nth-child(4) { left: 35%; }
+        .balloon:nth-child(5) { left: 45%; }
+        .balloon:nth-child(6) { left: 55%; }
+        .balloon:nth-child(7) { left: 65%; }
+        .balloon:nth-child(8) { left: 75%; }
+        .balloon:nth-child(9) { left: 85%; }
+        .balloon:nth-child(10) { left: 95%; }
+        .animate-2025 {
+            font-size: 5em;
+            font-weight: bold;
+            color: gold;
+            animation: zoom-in-out 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Balloons -->
+    <div class="balloon" style="left: 5%;"></div>
+    <div class="balloon" style="left: 15%;"></div>
+    <div class="balloon" style="left: 25%;"></div>
+    <div class="balloon" style="left: 35%;"></div>
+    <div class="balloon" style="left: 45%;"></div>
+    <div class="balloon" style="left: 55%;"></div>
+    <div class="balloon" style="left: 65%;"></div>
+    <div class="balloon" style="left: 75%;"></div>
+    <div class="balloon" style="left: 85%;"></div>
+    <div class="balloon" style="left: 95%;"></div>
+
+    
+    <div class="container">
+        <h1>Bonne Année !</h1>
+        <h1 class="animate-2025">2025</h1>
+        <p>Saisissez votre nom pour souhaiter une bonne année :</p>
+        <input type="text" placeholder="Votre nom">
+        <button>Envoyer</button>
+    </div>
+
+    <!-- Balloons -->
+    <div class="balloon" style="left: 5%;"></div>
+    <div class="balloon" style="left: 15%;"></div>
+    <div class="balloon" style="left: 25%;"></div>
+    <div class="balloon" style="left: 35%;"></div>
+    <div class="balloon" style="left: 45%;"></div>
+    <div class="balloon" style="left: 55%;"></div>
+    <div class="balloon" style="left: 65%;"></div>
+    <div class="balloon" style="left: 75%;"></div>
+    <div class="balloon" style="left: 85%;"></div>
+    <div class="balloon" style="left: 95%;"></div>
+
+    <!-- Confetti animation -->
+    <div class="confetti" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="confetti" style="left: 20%; animation-delay: 1s;"></div>
+    <div class="confetti" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="confetti" style="left: 40%; animation-delay: 3s;"></div>
+    <div class="confetti" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="confetti" style="left: 60%; animation-delay: 5s;"></div>
+    <div class="confetti" style="left: 70%; animation-delay: 6s;"></div>
+    <div class="confetti" style="left: 80%; animation-delay: 7s;"></div>
+    <div class="confetti" style="left: 90%; animation-delay: 8s;"></div>
+</body>
+</html>
